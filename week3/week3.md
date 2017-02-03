@@ -3,18 +3,18 @@
 #Topics:
 
 ##Stacks
--FILO Data Structure
--Add items with push()
--Remove with pop()
--Examine top with peek()
--Can be implemented using arrays OR linked lists (which would be better?)
+- FILO Data Structure
+- Add items with push()
+- Remove with pop()
+- Examine top with peek()
+- Can be implemented using arrays OR linked lists (which would be better?)
 
 ##Queues
--FIFO Data Structure
--Add items with enqueue()
--Remove with dequeue()
--Examine head with peek()
--Can be implemented using arrays OR linked lists (which would be better?)
+- FIFO Data Structure
+- Add items with enqueue()
+- Remove with dequeue()
+- Examine head with peek()
+- Can be implemented using arrays OR linked lists (which would be better?)
 
 ##Problems
 
