@@ -1,15 +1,20 @@
 #Week 3
 
-#Topics:
+##Topics:
 
-##Stacks
+###Recursion
+- 2 components: Base case and Recursive step
+- Examples: Fibonacci and Factorial
+- Go through Linked List recursion
+
+###Stacks
 - FILO Data Structure
 - Add items with push()
 - Remove with pop()
 - Examine top with peek()
 - Can be implemented using arrays OR linked lists (which would be better?)
 
-##Queues
+###Queues
 - FIFO Data Structure
 - Add items with enqueue()
 - Remove with dequeue()
@@ -17,6 +22,15 @@
 - Can be implemented using arrays OR linked lists (which would be better?)
 
 ##Problems
+
+
+###Given the head of an integer linked list, return the sum of the integers in the list RECURSIVELY
+
+Define base case as return 0 and recursive step as ptr.data + sum(ptr.next);, answer follows naturally
+
+###Given the head of an integer linked list and a target, return the node at which the target first occurs RECURSIVELY.
+
+Define base case as empty list (return null). Recursive step: if value is at node, return node. Otherwise, return search(front.next, value)
 
 ###Implement a queue using two stacks
 
