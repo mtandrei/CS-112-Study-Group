@@ -13,7 +13,7 @@ void buildLists(TreeNode root, ArrayList<LinkedList<TreeNode>> lists, int level)
     //Add new list to master list of lists
     list.add(list);
   }else{
-    lists.get(level);
+    list = lists.get(level);
   }
   //Determined list to add to, so add
   list.add(root);
