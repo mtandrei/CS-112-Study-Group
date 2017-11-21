@@ -23,11 +23,13 @@
 - Recall use of queue for BFS
 - DFS Solution can be found under Sesh's sakai resources (4/4), BFS attached.
 
-###Course Schedule: Given a list of prerequiste pairs and a number of courses needed to take, determine if it is possible to finish all of the courses.
-- Ex: If we need to take 2 courses and we have the pair (1,0) (this means that we need to take course 0 before course 1), then we return true. If we're given (1,0) and then (0,1), this is impossible (we have a cycle/codependency).
-- What technique have we learned that can solve this?
-- Toplogical Sorting (which depends on DFS or BFS)
-- Idea: If we can traverse our graph, visit every node and detect no cycle, then we know that we can finish the courses.
+###Cycle detection: Given a directed graph stored as an adjacency linked list, detect if there is a cycle in a graph
+- A cycle is defined as a path that starts and ends at a given node (visually this is a loop)
+- Which algorithm would be best suited for this? DFS, because if cycles are deep (i.e. span more than 2 or 3 edges), BFS will take a while to discover them.
+- Idea: Run a DFS from each vertex and see if we can't find the start node again
+- O(V(V+E))
+- Other idea: Run a single dfs. If an adjacent node has been visited and is NOT the parent of the current vertex, then we have a cycle.
+- O(V+E): One DFS
 
 ###Bipartite Graph: Given a graph stored as an adjacency list, determine if the graph is bipartitie, that is, if the vertices in the graph can be partitioned into two disjoint sets where all of the graph's edges connect a vertex in the first set to a vertex in the second set.
 - Hint: Another way to think of the problem is seeing if we can color the graph with 2 colors such that adjacent vertices don't have the same color.
